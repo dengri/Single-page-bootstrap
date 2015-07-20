@@ -133,6 +133,22 @@ footer .navbar-default {
 	margin:20px 0;
 }
 
+
+
+/** Page Mission **/
+
+#staff{
+	background-image:linear-gradient(to bottom, #E4D29D, #CDAE50  );
+	border-top:20px solid rgba(238, 200, 86, .5);
+}
+
+.doctor h3{
+	font-weight:bold;
+	color:#663300;
+	margin-top:15px;
+}
+
+
 #services img.icon {
 	margin:0 auto;
 	width:80px;
