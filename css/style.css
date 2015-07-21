@@ -168,6 +168,88 @@ and (max-width:768px){
 }
 
 
+/** Testimonials **/
+
+#testimonials{
+	padding:0;
+}
+
+#testimonials h2{
+	display:none;
+}
+
+#testimonials blockquote {
+	margin:0;
+	padding:0;
+	border-left:none;
+	min-height:500px;
+	position:relative;
+}
+
+
+#testimonials blockquote .quote {
+	background-color:rgba(255,255,255,.6);
+	padding:20px 5%;
+	position:absolute;
+	bottom:0;
+	font-weight:400;
+	border-radius:0 50px 0 0;
+	width:75%;
+}
+
+
+#testimonials blockquote .quote:hover {
+	background-color:rgba(239,240,196,.9);
+}
+
+#testimonials #janeh {
+	background:url(../images/testimonial-janeh.jpg) no-repeat center;
+	background-size:cover;
+}
+
+
+#testimonials #johnb{
+	background:url(../images/testimonial-johnb.jpg) no-repeat center;
+	background-size:cover;
+}
+
+
+#testimonials #mcphersons{
+	background:url(../images/testimonial-mcphersons.jpg) no-repeat center;
+	background-size:cover;
+}
+
+
+#testimonials #lorraines{
+	background:url(../images/testimonial-lorraines.jpg) no-repeat center;
+	background-size:cover;
+}
+
+/** Rollover **/
+#testimonials .quote .more, #testimonials .customer {
+	font-size:0;
+	line-height:0;
+	padding-top:10px;
+}
+
+
+#testimonials .quote:hover .more {
+	font-family:"Open Sans", sans-serif;
+	font-weight:100;
+	display:block;
+	font-size:0.8em;
+	line-height:120%;
+	padding-top:10px;
+}
+
+
+#testimonials .quote:hover .customer{
+	font-size:.7em;
+	font-weight:bold;
+	color:#663300;
+}
+
+
 .navbar {
 	border-radius:0;
 }
