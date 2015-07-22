@@ -22,11 +22,11 @@ img {
 /*===================================================*/
 
 header .navbar {
-	padding:30px 0;
+	padding:10px 0;
 }
 
 header .navbar-default {
-	background-color:transparent;
+	background-color:rgba(0,0,0,.5);
 	border:none;
 }
 
@@ -244,11 +244,21 @@ and (max-width:768px){
 
 
 #testimonials .quote:hover .customer{
+	display:block;
 	font-size:.7em;
 	font-weight:bold;
 	color:#663300;
 }
 
+/** Adding three dots after intro **/
+#testimonials  .intro::after {
+	content:' ...';
+}
+
+
+#testimonials .quote:hover .intro::after {
+	content:'';
+}
 
 .navbar {
 	border-radius:0;
@@ -258,4 +268,51 @@ footer .navbar-default{
 	background:transparent;
 	border-color:transparent;
 }
+
+/** Footer **/
+
+footer{
+	background:#586D74;
+	color:white;
+	font-size:.8em;
+	padding:20px 0 40px 0;
+}
+
+footer a{
+	color:#E0E6AE;
+}
+
+
+footer a:hover{
+	color:#E0E6AE;
+}
+
+footer .phone {
+	font-size:1.4em;
+	font-weight:700;
+	color:#E0E6AE;	
+}
+
+
+footer .navbar-nav>li a {
+	text-decoration:underline;
+	color:#EEC856 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
