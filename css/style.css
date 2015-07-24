@@ -20,15 +20,114 @@ img {
 }
 
 /*===================================================*/
-
-header .navbar {
-	padding:10px 0;
+.row {
+	padding:0 5rem;
 }
 
 header .navbar-default {
+	font-family:"Roboto Slab",sans-serif;
+	padding:10px 0;
+	height:9.5rem;
+	transition:height 1s;
 	background-color:rgba(0,0,0,.5);
 	border:none;
 }
+
+
+/** Navbar params. BENEATH the top of the page*/ 
+
+header nav.inbody {
+	height:5.2rem;
+}
+
+
+/** Logo parameters for the large screens & top of the page **/
+
+header h1 {
+	font-family:"Roboto Slab",sans-serif;
+	font-weight:400;
+	color:#fff;
+	padding-left:2.5em;
+	background:url("../images/wisdompetlogo.svg") no-repeat;
+}
+
+header .subhead {
+	font-weight:100;
+	font-size:.7em;
+	display:block;
+}
+
+/** Logo parameters for the large screens & BENEATH the top of the page **/
+
+header nav.inbody .subhead {
+	font-weight:100;
+	font-size:.7em;
+	display:inline;
+}
+
+header nav.inbody h1 {
+	padding-left:1.5em;
+}
+
+nav.inbody .navbar-header {
+	margin-top:-.2em;
+}
+
+
+
+@media only screen
+and (max-width:920px){
+	.row{ 
+		padding:0 1rem;
+		margin-right:0;
+	}
+}
+
+@media only screen and (max-width:800px){
+	header h1{
+		font-size:1.6em;
+	}
+
+	header nav.inbody h1{
+		font-size:1.4em;
+	}
+}
+
+@media only screen and (max-width:360px){
+
+	header .navbar-default {
+		height:6rem;
+	}
+
+	header h1{
+		font-size:1.2em;
+	}
+
+	.navbar-toggle{
+		bottom:2.5em;
+		left:1em;
+	}
+
+	nav.inbody .navbar-toggle{
+		bottom:1.5em;
+		left:1em;
+	}
+
+	header nav.inbody h1{
+		font-size:1.2em;
+	}
+	
+	header nav.inbody .subhead{
+		font-weight:300;
+	}
+
+	header .subhead{
+		font-weight:300;
+	}
+
+}
+
+
 
 header .navbar-default .navbar-nav a {
   color: white;
@@ -57,28 +156,6 @@ header .navbar-default .navbar-nav .active a:hover {
 
 /** Navbar Brand **/
 
-header .navbar-brand {
-	background:url(../images/wisdompetlogo.svg);
-	background-repeat:no-repeat;
-	background-position:50px;
-	height:auto;
-}
-
-header .navbar-brand h1{	
-	color:white;
-	margin:0;
-	font-size:1.8em;
-	font-weight:400;
-	padding-left:145px;
-}
-
-header .navbar-brand span {
-	display:block;
-	font-family:"Roboto Slab", serif;
-	font-size:0.6em;
-	font-weight:100;
-}
-
 header .navbar-toggle{
 	background-color:#279182;
 }
@@ -87,12 +164,25 @@ header .navbar-default .navbar-toggle .icon-bar {
 	background-color:white;
 }
 
+
+
+
+
+
+
+
+
+
+
+
 @media only screen
 and (max-width:768px){
-	header .navbar-collapse.in {
-	background-color:rgba(0,0,0, .5);
+	.service p{
 	}
 }
+
+
+
 
 
 /**  Footer Navigation **/
